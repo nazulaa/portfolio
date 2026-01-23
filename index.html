@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rifzu | Portfolio</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+
+  <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+  <!-- Draggable -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/Draggable.min.js"></script>
+
+  <!-- InertiaPlugin -->
+  <!-- InertiaPlugin is a premium Club GSAP plugin and not available on public CDNs. This causes a 404 error. -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/InertiaPlugin.min.js"></script> -->
+  <script src="animation.js" defer></script>
+
+
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#home">Rifzu <i class="fa-solid fa-cat"></i></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Projects
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="#web">Programming</a></li>
+              <li><a class="dropdown-item" href="#spatial">GIS Related</a></li>
+              <li><a class="dropdown-item" href="#survey">Surveys</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#design">Design Graphic</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#experiences">Experiences</a></li>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HOME -->
+  <section id="home" class="hero">
+
+    <div class="profile-card">
+      <div class="profile-card-inner">
+        <div class="profile-card-front">
+          <img src="assets/rifzu.jpeg" class="profile" alt="Rifzu">
+        </div>
+        <div class="profile-card-back">
+          <img src="assets/avarif.jpg" class="profile" alt="Rifzu Back">
+        </div>
+      </div>
+    </div>
+    <h1>Hi, I’m Rifda</h1>
+    <div class="carousel1">
+      <p class="introtext">GIS Analyst</p>
+      <p class="introtext">GIS/Software Engineer</p>
+      <p class="introtext">Cartographer</p>
+    </div>
+  </section>
+
+  <div class="cv-container">
+    <a href="https://drive.google.com/file/d/1SSroOViReLJpn_Zl2wKdoWmFMs1yQyd6/view?usp=drive_link" class="btn-cv"
+      target="_blank"> Get CV <i class="fa-solid fa-download"></i></a>
+    <a href="#about" class="btn-abt"><i class="fa-solid fa-cat"></i></i></a>
+  </div>
+
+  <div class="box black"></div>
+
+  <!-- ABOUT -->
+  <section id="about" class="profile">
+    <h2>About Me</h2>
+    <div class="aboutme">
+      <div class="about-text">
+        <p>
+          A GIS Analyst and GIS/Software Developer enthusiast from Universitas Gadjah Mada (UGM) with strong expertise
+          in GIS analysis, mapping, and web and mobile application development for both GIS and non-GIS platforms.
+          Highly responsible, persistent, and solution-oriented, with a strong passion for problem solving and
+          continuous learning. Experienced in spatial data processing, visualization, and developing interactive
+          applications that integrate geospatial and general software solutions. Possesses a solid foundation in modern
+          web and mobile development, enabling the creation of scalable, efficient, and user-centered applications
+          across various domains.
+        </p>
+      </div>
+      <div class="education-container">
+        <div class="education-card">
+          <h5>Universitas Gadjah Mada</h5>
+          <p>D4 Sistem Informasi Geografis</p>
+          <p>2023-2027</p>
+        </div>
+        <div class="education-card">
+          <h5>SMAN 1 Yogyakarta</h5>
+          <p>MIPA</p>
+          <p>2019-2023</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+
+    <div class="skilll">
+      <h2>SKILLS and TECHS</h2>
+
+      <div class="skills-wrapper">
+    <div class="skills-track1">
+        <span class="skill-pill">Spatial Data Analysis</span>
+        <span class="skill-pill">Remote Sensing & Image Processing</span>
+        <span class="skill-pill">Geospatial Statistics</span>
+        <span class="skill-pill">Geospatial Data Management</span>
+        <span class="skill-pill">Geospatial Visualization</span>
+        <span class="skill-pill">Spatial/Non-Spatial Data Science</span>
+        <span class="skill-pill">Data Manipulation</span>
+        <span class="skill-pill">Spatial Planning Analysis</span>
+        <span class="skill-pill">Urban Spatial Analysis</span>
+        <span class="skill-pill">Web Development</span>
+        <span class="skill-pill">Mobile Apps Development</span>
+        <span class="skill-pill">Spatial Data Analysis</span>
+        <span class="skill-pill">Remote Sensing & Image Processing</span>
+        <span class="skill-pill">Geospatial Statistics</span>
+        <span class="skill-pill">Geospatial Data Management</span>
+        <span class="skill-pill">Geospatial Visualization</span>
+        <span class="skill-pill">Spatial/Non-Spatial Data Science</span>
+        <span class="skill-pill">Data Manipulation</span>
+        <span class="skill-pill">Spatial Planning Analysis</span>
+        <span class="skill-pill">Urban Spatial Analysis</span>
+        <span class="skill-pill">Web Development</span>
+        <span class="skill-pill">Mobile Apps Development</span>
+    </div>
+    <div class="skills-track2">
+        <span class="skill-pill">Problem Solving</span>
+        <span class="skill-pill">Responsible</span>
+        <span class="skill-pill">Reliability</span>
+        <span class="skill-pill">Teamwork & Collaboration</span>
+        <span class="skill-pill">Time Management</span>
+        <span class="skill-pill">Adaptability</span>
+        <span class="skill-pill">Willingness to Learn</span>
+        <span class="skill-pill">Problem Solving</span>
+        <span class="skill-pill">Responsible</span>
+        <span class="skill-pill">Reliability</span>
+        <span class="skill-pill">Teamwork & Collaboration</span>
+        <span class="skill-pill">Time Management</span>
+        <span class="skill-pill">Adaptability</span>
+        <span class="skill-pill">Willingness to Learn</span>
+    </div>
+</div>
+    </div>
+
+    <div class="logos-container">
+      <div class="logos-wrapper">
+        <p class="logos-title">Spatial Analysis Technology</p>
+        <div class="logos">
+          <div class="logos-track">
+            <img src="assets/icons/arcgispro-removebg-preview.png" alt="">
+            <img src="assets/icons/arcgispro-removebg-preview.png" alt="ArcGIS ">
+            <img src="assets/icons/gee.png" alt="">
+            <img src="assets/icons/qgis.png" alt="">
+            <img src="assets/icons/excel.png" alt="">
+            <img src="assets/icons/envi.png" alt="">
+            <img src="assets/icons/rstudio.png" alt="">
+            <img src="assets/icons/spss.png" alt="">
+            <img src="assets/icons/tableau.png" alt="">
+            <img src="assets/icons/colab.png" alt="">
+            <img src="assets/icons/jupyter.png" alt="">
+            <img src="assets/icons/postgresql.png" alt="">
+
+            <!-- Duplikat untuk seamless loop -->
+            <img src="assets/icons/arcgispro-removebg-preview.png" alt="">
+            <img src="assets/icons/arcgispro-removebg-preview.png" alt="ArcGIS ">
+            <img src="assets/icons/gee.png" alt="">
+            <img src="assets/icons/qgis.png" alt="">
+            <img src="assets/icons/excel.png" alt="">
+            <img src="assets/icons/envi.png" alt="">
+            <img src="assets/icons/rstudio.png" alt="">
+            <img src="assets/icons/spss.png" alt="">
+            <img src="assets/icons/tableau.png" alt="">
+            <img src="assets/icons/colab.png" alt="">
+            <img src="assets/icons/jupyter.png" alt="">
+            <img src="assets/icons/postgresql.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="logos-wrapper">
+        <p class="logos-title">Coding Technology</p>
+        <div class="logos">
+          <div class="logos-track">
+            <img src="assets/icons/android.png" alt="">
+            <img src="assets/icons/vscode.png" alt=" ">
+            <img src="assets/icons/jupyter.png" alt="">
+            <img src="assets/icons/colab.png" alt="">
+            <img src="assets/icons/html.png" alt="">
+            <img src="assets/icons/css.png" alt="">
+            <img src="assets/icons/js.png" alt="">
+            <img src="assets/icons/python.png" alt="">
+            <img src="assets/icons/react.png" alt="">
+            <img src="assets/icons/laravel.png" alt="">
+            <img src="assets/icons/phpmyadmin.png" alt="">
+            <img src="assets/icons/dbeaver.png" alt="">
+            <img src="assets/icons/mysql.png" alt="">
+            <img src="assets/icons/postgresql.png" alt="">
+            <img src="assets/icons/leafletjs.png" alt="">
+            <img src="assets/icons/geoserver.png" alt="">
+
+            <!-- Duplikat untuk seamless loop -->
+            <img src="assets/icons/android.png" alt="Android">
+            <img src="assets/icons/arcgisdesktop.jpg" alt="ArcGIS Desktop">
+            <img src="assets/icons/colab.png" alt="Google Colab">
+            <img src="assets/icons/arcgispro.png" alt="ArcGIS Pro">
+            <img src="assets/icons/qgis.png" alt="QGIS">
+            <img src="assets/icons/excel.png" alt="Excel">
+            <img src="assets/icons/gee.png" alt="Google Earth Engine">
+            <img src="assets/icons/spss.png" alt="SPSS">
+            <img src="assets/icons/dbeaver.png" alt="DBeaver">
+            <img src="assets/icons/rstudio.png" alt="RStudio">
+            <img src="assets/icons/mysql.png" alt="MySQL">
+            <img src="assets/icons/postgresql.png" alt="PostgreSQL">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="web" class="section web-section">
+    <h2>APPS DEVELOPMENT</h2>
+    <div class="web-scroll-area">
+      <div class="web-grid">
+        <div class="web-card">
+          <img src="assets/projects/porto.png">
+          <div class="web-overlay">
+            <h5>PORTFOLIO</h5>
+            <p>Personal Portfolio Website</p>
+          </div>
+        </div>
+        <div class="web-card">
+          <img src="assets/projects/grest.png">
+          <div class="web-overlay">
+            <h5>GREST</h5>
+            <p>Green Spatial Tracking App</p>
+          </div>
+        </div>
+
+        <div class="web-card">
+          <img src="assets/projects/aenervoltt.png">
+          <div class="web-overlay">
+            <h5>Aenervolt</h5>
+            <p>Web Application</p>
+          </div>
+        </div>
+        <div class="web-card">
+          <img src="assets/projects/BIS.png">
+          <div class="web-overlay">
+            <h5>Bogformation</h5>
+            <p>Bogor Information System</p>
+          </div>
+        </div>
+        <div class="web-card">
+          <img src="assets/projects/reccomenate.png">
+          <div class="web-overlay">
+            <h5>R8 - Reccomenate</h5>
+            <p>Web Application</p>
+          </div>
+        </div>
+        <div class="web-card">
+          <img src="assets/projects/ptsimpul.png">
+          <div class="web-overlay">
+            <h5>SIMPUL</h5>
+            <p>StartUp Comp Worker Management System</p>
+          </div>
+        </div>
+        <div class="web-card">
+          <img src="assets/projects/duplica.PNG">
+          <div class="web-overlay">
+            <h5>Duplica</h5>
+            <p>Web Application</p>
+          </div>
+        </div>
+        <div class="web-card">
+          <img src="assets/project3.jpg">
+          <div class="web-overlay">
+            <h5>Mobile Apps</h5>
+            <p>Personal Website</p>
+          </div>
+        </div>
+        <div class="web-card">
+          <img src="assets/projects/desktop.png">
+          <div class="web-overlay">
+            <h5>Desktop App</h5>
+            <p>Landuse Management VB Apps</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="spatial" class="section maps-section">
+    <h2>ANALYSIS</h2>
+    <div class="collage">
+      <div class="map-card">
+        <img src="assets/projects/sdacoer.png">
+        <div class="map-overlay">
+          <h5>Aenervolt</h5>
+          <p>Energy Survey</p>
+        </div>
+      </div>
+
+      <div class="map-card">
+        <img src="assets/aenervolt2.png">
+        <div class="map-overlay">
+          <h5>Aenervolt II</h5>
+          <p>Field Documentation</p>
+        </div>
+      </div>
+
+      <div class="map-card">
+        <img src="assets/grest.png">
+        <div class="map-overlay">
+          <h5>GREST</h5>
+          <p>Environmental Survey</p>
+        </div>
+      </div>
+      <div class="map-card">
+        <img src="assets/grest.png">
+        <div class="map-overlay">
+          <h5>GREST</h5>
+          <p>Environmental Survey</p>
+        </div>
+      </div>
+      <div class="map-card">
+        <img src="assets/grest.png">
+        <div class="map-overlay">
+          <h5>GREST</h5>
+          <p>Environmental Survey</p>
+        </div>
+      </div>
+      <div class="map-card">
+        <img src="assets/grest.png">
+        <div class="map-overlay">
+          <h5>GREST</h5>
+          <p>Environmental Survey</p>
+        </div>
+      </div>
+      <div class="map-card">
+        <img src="assets/grest.png">
+        <div class="map-overlay">
+          <h5>GREST</h5>
+          <p>Environmental Survey</p>
+        </div>
+      </div>
+      <div class="map-card">
+        <img src="assets/grest.png">
+        <div class="map-overlay">
+          <h5>GREST</h5>
+          <p>Environmental Survey</p>
+        </div>
+      </div>
+
+  </section>
+
+  <section id="survey" class="surveys-section">
+    <h2>SURVEYS GALLERY</h2>
+
+    <div class="dual-marquee-wrapper">
+
+      <!-- BARIS 1 - GERAK KE KIRI -->
+      <div class="marquee-row">
+        <div class="marquee-track">
+          <!-- Set Pertama -->
+          <div class="survey-card">
+            <img src="assets/photos/survey(2).jpg" alt="Survey 1">
+            <div class="survey-overlay">
+              <h5>Drone Mapping</h5>
+              <p>PT Geospatial Nusantara</p>
+            </div>
+          </div>
+
+          <div class="survey-card">
+            <img src="assets/photos/survey(12).jpg" alt="Survey 2">
+            <div class="survey-overlay">
+              <h5>Internship</h5>
+              <p>PT Geospatial Nusantara</p>
+            </div>
+          </div>
+
+          <div class="survey-card">
+            <img src="assets/photos/survey(25).jpg" alt="Survey 3">
+            <div class="survey-overlay">
+              <h5>GREST</h5>
+              <p>Geological Survey</p>
+            </div>
+          </div>
+
+          <div class="survey-card">
+            <img src="assets/photos/survey(26).jpg" alt="Survey 4">
+            <div class="survey-overlay">
+              <h5>Mountain Peak</h5>
+              <p>Terrain Analysis</p>
+            </div>
+          </div>
+
+          <div class="survey-card">
+            <img src="assets/photos/survey(22).jpg" alt="Survey 5">
+            <div class="survey-overlay">
+              <h5>Forest Study</h5>
+              <p>Biodiversity Survey</p>
+            </div>
+          </div>
+
+          <!-- Duplikasi untuk loop smooth -->
+          <div class="survey-card">
+            <img src="assets/photos/survey(27).jpg" alt="Survey 1">
+            <div class="survey-overlay">
+              <h5>Aenervolt</h5>
+              <p>Energy Survey</p>
+            </div>
+          </div>
+
+          <div class="survey-card">
+            <img src="assets/photos/survey(14).jpg" alt="Survey 2">
+            <div class="survey-overlay">
+              <h5>Field Research</h5>
+              <p>Environmental Assessment</p>
+            </div>
+          </div>
+
+          <div class="survey-card">
+            <img src="assets/photos/survey(2).jpeg" alt="Survey 3">
+            <div class="survey-overlay">
+              <h5>GREST</h5>
+              <p>Geological Survey</p>
+            </div>
+          </div>
+
+          <div class="survey-card">
+            <img src="assets/photos/survey(15).jpg" alt="Survey 4">
+            <div class="survey-overlay">
+              <h5>Mountain Peak</h5>
+              <p>Terrain Analysis</p>
+            </div>
+          </div>
+
+          <div class="survey-card">
+            <img src="assets/photos/survey(16).jpg" alt="Survey 5">
+            <div class="survey-overlay">
+              <h5>Forest Study</h5>
+              <p>Biodiversity Survey</p>
+            </div>
+          </div>
+          <div class="survey-card">
+            <img src="assets/photos/survey(32).jpg" alt="Survey 5">
+            <div class="survey-overlay">
+              <h5>Forest Study</h5>
+              <p>Biodiversity Survey</p>
+            </div>
+          </div>
+          <div class="survey-card">
+            <img src="assets/photos/survey(22).jpg" alt="Survey 5">
+            <div class="survey-overlay">
+              <h5>Forest Study</h5>
+              <p>Biodiversity Survey</p>
+            </div>
+          </div>
+          <div class="survey-card">
+            <img src="assets/photos/survey(16).jpg" alt="Survey 5">
+            <div class="survey-overlay">
+              <h5>Forest Study</h5>
+              <p>Biodiversity Survey</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BARIS 2 - GERAK KE KANAN -->
+      <div class="marquee-row">
+        <div class="marquee-track">
+          <!-- Set Pertama -->
+          <div class="survey-card">
+            <img src="assets/photos/survey(2).HEIC" alt="Survey 6">
+            <div class="survey-overlay">
+              <h5>Summit View</h5>
+              <p>Altitude Research</p>
+            </div>
+          </div>
+
+          <div class="survey-card">
+            <img src="assets/photos/survey(4).jpg" alt="Survey 7">
+            <div class="survey-overlay">
+              <h5>Lake Study</h5>
+              <p>Water Quality Survey</p>
+            </div>
+          </div>
+
+          <div class="survey-card">
+            <img src="assets/photos/survey(9).jpg" alt="Survey 8">
+            <div class="survey-overlay">
+              <h5>Coastal Survey</h5>
+              <p>Marine Assessment</p>
+            </div>
+          </div>
+
+          <div class="survey-card">
+            <img src="assets/photos/survey(4).jpg" alt="Survey 9">
+            <div class="survey-overlay">
+              <h5>Valley Research</h5>
+              <p>Ecosystem Analysis</p>
+            </div>
+          </div>
+
+          <div class="survey-card">
+            <img src="assets/photos/survey(10).jpg" alt="Survey 10">
+            <div class="survey-overlay">
+              <h5>Sky Watch</h5>
+              <p>Climate Monitoring</p>
+            </div>
+          </div>
+
+          <!-- Duplikasi untuk loop smooth -->
+          <div class="survey-card">
+            <img src="assets/photos/survey(13).jpg" alt="Survey 6">
+            <div class="survey-overlay">
+              <h5>Summit View</h5>
+              <p>Altitude Research</p>
+            </div>
+          </div>
+
+          <div class="survey-card">
+            <img src="assets/photos/survey(21).jpg" alt="Survey 7">
+            <div class="survey-overlay">
+              <h5>Lake Study</h5>
+              <p>Water Quality Survey</p>
+            </div>
+          </div>
+
+          <div class="survey-card">
+            <img src="assets/photos/survey(3).jpg" alt="Survey 8">
+            <div class="survey-overlay">
+              <h5>Coastal Survey</h5>
+              <p>Marine Assessment</p>
+            </div>
+          </div>
+
+          <div class="survey-card">
+            <img src="assets/photos/survey(18).jpg" alt="Survey 9">
+            <div class="survey-overlay">
+              <h5>Valley Research</h5>
+              <p>Ecosystem Analysis</p>
+            </div>
+          </div>
+
+          <div class="survey-card">
+            <img src="assets/photos/survey(5).jpg" alt="Survey 10">
+            <div class="survey-overlay">
+              <h5>Sky Watch</h5>
+              <p>Climate Monitoring</p>
+            </div>
+          </div>
+          <div class="survey-card">
+            <img src="assets/photos/survey(11).jpg" alt="Survey 10">
+            <div class="survey-overlay">
+              <h5>Sky Watch</h5>
+              <p>Climate Monitoring</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="design" class="section design-section">
+    <h2>GRAPHIC DESIGN</h2>
+
+    <div class="design-wrapper">
+      <div class="design-scroll" id="designScroll">
+
+        <div class="design-card">
+          <img src="assets/projects/gemilangaradhana.png">
+          <div class="design-overlay">
+            <h5>Gemilang Aradhana Logo</h5>
+            <p>BEM KM SV UGM</p>
+          </div>
+        </div>
+
+        <div class="design-card">
+          <img src="assets/projects/aksanawasena.png">
+          <div class="design-overlay">
+            <h5>Aksa Nawasena Logo</h5>
+            <p>BEM KM SV UGM</p>
+          </div>
+        </div>
+
+        <div class="design-card">
+          <img src="assets/projects/13.png">
+          <div class="design-overlay">
+            <h5>Vocareer Layout</h5>
+            <p>Vocational Magazine - BEM KM SV Projects</p>
+          </div>
+        </div>
+
+        <div class="design-card">
+          <img src="assets/projects/10.png">
+          <div class="design-overlay">
+            <h5>Dialektika Layout</h5>
+            <p>Vocational Magazine - BEM KM SV Projects</p>
+          </div>
+        </div>
+        <div class="design-card">
+          <img src="assets/projects/matchhockey.png">
+          <div class="design-overlay">
+            <h5>Social Media Design</h5>
+            <p>UGM Vocational Supporter Team</p>
+          </div>
+        </div>
+        <div class="design-card">
+          <img src="assets/projects/merch.png">
+          <div class="design-overlay">
+            <h5>Merchandise Branding</h5>
+            <p>UGM Vocational Supporter Team</p>
+          </div>
+        </div>
+        <div class="design-card">
+          <img src="assets/projects/slide1.png">
+          <div class="design-overlay">
+            <h5>Social Media Design</h5>
+            <p>UGM Vocational Supporter Team</p>
+          </div>
+        </div>
+        <div class="design-card">
+          <img src="assets/projects/slide4.png">
+          <div class="design-overlay">
+            <h5>Social Media Design</h5>
+            <p>UGM Vocational Supporter Team</p>
+          </div>
+        </div>
+        <div class="design-card">
+          <img src="assets/projects/slide5.png">
+          <div class="design-overlay">
+            <h5>Social Media Design</h5>
+            <p>UGM Vocational Supporter Team</p>
+          </div>
+        </div>
+        <div class="design-card">
+          <img src="assets/projects/slide6.png">
+          <div class="design-overlay">
+            <h5>Social Media Design</h5>
+            <p>UGM Vocational Supporter Team</p>
+          </div>
+        </div>
+        <div class="design-card">
+          <img src="assets/projects/slide7.png">
+          <div class="design-overlay">
+            <h5>Social Media Design</h5>
+            <p>UGM Vocational Supporter Team</p>
+          </div>
+        </div>
+        <div class="design-card">
+          <img src="assets/projects/slide8.png">
+          <div class="design-overlay">
+            <h5>Social Media Design</h5>
+            <p>UGM Vocational Supporter Team</p>
+          </div>
+        </div>
+        <div class="design-card">
+          <img src="assets/projects/1.png">
+          <div class="design-overlay">
+            <h5>Album Cover</h5>
+            <p>Praktik Kerja Lapangan - 2</p>
+          </div>
+        </div>
+        <div class="design-card">
+          <img src="assets/projects/cake.png">
+          <div class="design-overlay">
+            <h5>Social Media Design</h5>
+            <p>Branding content</p>
+          </div>
+        </div>
+        <div class="design-card">
+          <img src="assets/projects/castle.jpg">
+          <div class="design-overlay">
+            <h5>Social Media Design</h5>
+            <p>Branding content</p>
+          </div>
+        </div>
+        <div class="design-card">
+          <img src="assets/projects/batik.jpg">
+          <div class="design-overlay">
+            <h5>Social Media Design</h5>
+            <p>Branding content</p>
+          </div>
+        </div>
+        <div class="design-card">
+          <img src="assets/projects/nyepi.jpg">
+          <div class="design-overlay">
+            <h5>Social Media Design</h5>
+            <p>Branding content</p>
+          </div>
+        </div>
+        <div class="design-card">
+          <img src="assets/projects/idlfitri.jpg">
+          <div class="design-overlay">
+            <h5>Social Media Design</h5>
+            <p>Branding content</p>
+          </div>
+        </div>
+        <div class="design-card">
+          <img src="assets/projects/rosE.jpg">
+          <div class="design-overlay">
+            <h5>Social Media Design</h5>
+            <p>Branding content</p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="experiences-section">
+    <div class="section-header">
+      <h2 class="section-title">EXPERIENCES</h2>
+      <p class="section-subtitle">Selected experiences that reflect my learning journey, hands-on projects, and personal
+        development</p>
+    </div>
+
+    <div class="experiences-container">
+      <div class="timeline-line"></div>
+
+      <div class="experience-card">
+        <div class="timeline-dot"></div>
+        <div class="experience-accent"></div>
+        <div class="experience-header">
+          <div class="experience-info">
+            <h3 class="experience-title">Universitas Gadjah Mada</h3>
+            <p class="experience-subtitle">Lecturer Assistant for Geospatial Website Programming</p>
+            <span class="experience-period">Aug 2025 - Jan 2026 </span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="experience-card">
+        <div class="timeline-dot"></div>
+        <div class="experience-accent"></div>
+        <div class="experience-header">
+          <div class="experience-info">
+            <h3 class="experience-title">PT Simpul Reka Citra</h3>
+            <p class="experience-subtitle">Fullstack Web Developer Internship</p>
+            <span class="experience-period">Dec 2024 - April 2025</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="experience-card">
+        <div class="timeline-dot"></div>
+        <div class="experience-accent"></div>
+        <div class="experience-header">
+          <div class="experience-info">
+            <h3 class="experience-title">PT Geospatial Nusantara (GSN)</h3>
+            <p class="experience-subtitle">GIS Analyst Internship</p>
+            <span class="experience-period">Dec 2024 - Jan 2025</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="experience-card">
+        <div class="timeline-dot"></div>
+        <div class="experience-accent"></div>
+        <div class="experience-header">
+          <div class="experience-info">
+            <h3 class="experience-title">Multimedia and Information Staff</h3>
+            <p class="experience-subtitle">Student Executive Board (BEM KM SV UGM)</p>
+            <span class="experience-period">Nov 2023 - Dec 2025</span>
+          </div>
+        </div>
+      </div>
+      <div class="experience-card">
+        <div class="timeline-dot"></div>
+        <div class="experience-accent"></div>
+        <div class="experience-header">
+          <div class="experience-info">
+            <h3 class="experience-title">UXGAMA (UI/UX) Division</h3>
+            <p class="experience-subtitle">KOMATIK UGM (Komunitas Mahasiswa TIK 2024)</p>
+            <span class="experience-period">Nov 2024 - Jan 2025</span>
+          </div>
+        </div>
+      </div>
+      <div class="experience-card">
+        <div class="timeline-dot"></div>
+        <div class="experience-accent"></div>
+        <div class="experience-header">
+          <div class="experience-info">
+            <h3 class="experience-title">Field Work Practice I II (PKL 1 2)</h3>
+            <p class="experience-subtitle">Symbology Coordinator & Digital Design Documentation Staff</p>
+            <span class="experience-period">2024 - 2025</span>
+          </div>
+        </div>
+      </div>
+      <div class="experience-card">
+        <div class="timeline-dot"></div>
+        <div class="experience-accent"></div>
+        <div class="experience-header">
+          <div class="experience-info">
+            <h3 class="experience-title">SIGMA - SMA N 1 Yogyakarta</h3>
+            <p class="experience-subtitle">Coordinator of Computer Division</p>
+            <span class="experience-period">2021 - 2022</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section exp-section">
+    <h2>Let's Get In Touch</h2>
+
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <h3><i class="fa-solid fa-cat"></i> Rifzu </h3>
+      <p>
+        GIS Analyst • Web Developer • Graphic Designer<br>
+        Building meaningful maps & clean interfaces.
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <h6>Navigation</h6>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#web"> Projects</a>
+      <a href="#experiences">Experiences</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-social">
+      <h6>Connect</h6>
+      <a href="https://www.linkedin.com/in/rifda-najla-azzahra-9a0301291/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/nazulaa" target="_blank">GitHub</a>
+      <a href="https://www.instagram.com/rifdaashh/" target="_blank">Instagram</a>
+      <a href="https://mail.google.com/mail/?view=cm&to=rifdanajlaazzahra@gmail.com" target="_blank">Email</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Rifzu. All rights reserved.
+  </div>
+</footer>
+
+
+</html>
