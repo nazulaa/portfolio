@@ -87,4 +87,3 @@ scrollContainer.addEventListener("mouseenter", () => isPaused = true);
 scrollContainer.addEventListener("mouseleave", () => isPaused = false);
 scrollContainer.addEventListener("touchstart", () => isPaused = true);
 scrollContainer.addEventListener("touchend", () => isPaused = false);
-

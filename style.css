@@ -481,21 +481,7 @@ h1 {
 }
 
 
-/* MOBILE */
-@media (max-width: 768px) {
-  #home {
-    flex-direction: column;
-    text-align: center;
-  }
 
-  .intro {
-    font-size: 6vh;
-  }
-
-  .profile {
-    height: 35vh;
-  }
-}
 
 
 .skills-wrapper {
@@ -539,14 +525,7 @@ h1 {
   }
 }
 
-@keyframes scroll-right {
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
+
 
 .skill-pill {
   white-space: nowrap;
@@ -752,21 +731,7 @@ h1 {
   }
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .surveys-section h2 {
-    font-size: 2rem;
-    margin-bottom: 40px;
-  }
 
-  .survey-card {
-    height: 200px;
-  }
-
-  .dual-marquee-wrapper {
-    max-height: 50vh;
-  }
-}
 
 /* CARD */
 .map-card {
@@ -872,13 +837,7 @@ h1 {
   opacity: 0.7;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .footer-container {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
-}
+
 
 .footer a:hover {
   text-shadow: 0 0 6px rgba(245, 245, 220, 0.4);
@@ -1146,42 +1105,7 @@ h1 {
   opacity: 1;
 }
 
-@media (max-width: 768px) {
-  .section-title {
-    font-size: 2.5rem;
-  }
 
-  .experiences-container {
-    padding-left: 40px;
-  }
-
-  .timeline-line {
-    left: 15px;
-  }
-
-  .timeline-dot {
-    left: -33px;
-    width: 14px;
-    height: 14px;
-  }
-
-  .experience-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .experience-period {
-    align-self: flex-start;
-  }
-
-  .experience-card {
-    padding: 25px;
-  }
-
-  .experience-title {
-    font-size: 1.5rem;
-  }
-}
 
 @keyframes fadeInUp {
   from {
@@ -1354,11 +1278,7 @@ h1 {
             pointer-events: none;
         }
 
-        @media (max-width: 480px) {
-            .container {
-                padding: 32px 24px;
-            }
-        }
+
 
 .contact-cards-container {
             display: grid;
@@ -1410,10 +1330,4 @@ h1 {
         .contact-card-subtitle {
             color: #666;
             font-size: 12px;
-        }
-
-        @media (max-width: 600px) {
-            .contact-cards-container {
-                grid-template-columns: repeat(2, 1fr);
-            }
         }
