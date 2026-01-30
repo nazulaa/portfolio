@@ -125,15 +125,11 @@
     }
 
     .skills-wrapper {
-        -webkit-mask-image: none;
-        mask-image: none;
-        overflow: hidden; /* Hide overflow to prevent horizontal scroll */
+        
     }
 
     .skills-track1,
     .skills-track2 {
-        animation: none;
-        flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
         width: 100%;
@@ -155,12 +151,10 @@
     }
 
     .logos {
-        mask-image: none;
+
     }
 
     .logos-track {
-        animation: none;
-        flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
     }
